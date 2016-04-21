@@ -1,0 +1,27 @@
+@-webkit-keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+body {
+  text-align: center;
+}
+
+#drop-anywhere {
+  line-height: 500px;
+  text-align: center;
+  color: white;
+  display: none;
+}
+
+#drop-anywhere::before {
+  content: 'Drop to upload!';
+}
+
+#drop-anywhere.show {
+  -webkit-animation: show 300ms;
+}
